@@ -23,7 +23,7 @@ using namespace cv;
 using namespace std;
 
  
-int main2( )
+int main( )
 {
  
        Mat image;
