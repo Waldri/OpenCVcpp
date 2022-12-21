@@ -11,6 +11,7 @@
 				"${file}",
 				"-o",
 				"${fileDirname}/${fileBasenameNoExtension}",
+				"`pkg-config --libs opencv4 --cflags`",
 				// "-g","${workspaceFolder}/${fileBasenameNoExtension}.cpp",
                 // "-o","${fileBasenameNoExtension}.out",
                 "-I","/usr/include",
