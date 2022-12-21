@@ -5,6 +5,7 @@ Waldri dos Santos Oliveira
 
 Compile cmd:
 cpp -g main.cpp -o main -I /usr/include/ -I /usr/include/opencv4/ -L /usr/local/lib/*
+g++ -g test.cpp -o test -I /usr/include/ -I /usr/include/opencv4/ -L /usr/local/lib/* `pkg-config --cflags --libs opencv4`
 
 python3 test.py
 

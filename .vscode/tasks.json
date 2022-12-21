@@ -16,7 +16,7 @@
                 "-I","/usr/include",
                 "-I","/usr/include/opencv",
                 "-I","/usr/include/opencv4",
-                "-L","/usr/local/lib/lib*",
+                "-L","/usr/local/lib/*",
 
                 // "-L","/usr/local/lib/**",
                 // "-I","/usr/include/opencv4/opencv/**",
