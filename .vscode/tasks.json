@@ -13,26 +13,26 @@
 				"${fileDirname}/${fileBasenameNoExtension}",
 				"`pkg-config --libs opencv4 --cflags`",
 				// "-g","${workspaceFolder}/${fileBasenameNoExtension}.cpp",
-                // "-o","${fileBasenameNoExtension}.out",
-                "-I","/usr/include",
-                "-I","/usr/include/opencv",
-                "-I","/usr/include/opencv4",
-                "-L","/usr/local/lib/*",
+				// "-o","${fileBasenameNoExtension}.out",
+				"-I","/usr/include",
+				"-I","/usr/include/opencv",
+				"-I","/usr/include/opencv4",
+				"-L","/usr/local/lib/*",
 
-                // "-L","/usr/local/lib/**",
-                // "-I","/usr/include/opencv4/opencv/**",
-                // "-I","/usr/include/opencv4/opencv2/**",
-                // "-L", "/usr/local/lib/",
-                // "-l", "opencv_core", "-lopencv_imgproc", 
-                // "-l", "opencv_highgui",
-                // "-l", "opencv_ml",
-                // "-l", "opencv_video",
-                // "-l", "opencv_features2d",
-                // "-l", "opencv_calib3d",
-                // "-l", "opencv_objdetect", 
-                // "-l", "opencv_contrib", 
-                // "-l", "opencv_legacy",
-                // "-l", "opencv_stitching"
+				// "-L","/usr/local/lib/**",
+				// "-I","/usr/include/opencv4/opencv/**",
+				// "-I","/usr/include/opencv4/opencv2/**",
+				// "-L", "/usr/local/lib/",
+				// "-l", "opencv_core", "-lopencv_imgproc", 
+				// "-l", "opencv_highgui",
+				// "-l", "opencv_ml",
+				// "-l", "opencv_video",
+				// "-l", "opencv_features2d",
+				// "-l", "opencv_calib3d",
+				// "-l", "opencv_objdetect", 
+				// "-l", "opencv_contrib", 
+				// "-l", "opencv_legacy",
+				// "-l", "opencv_stitching"
 			],
 			"options": {
 				"cwd": "${fileDirname}"
@@ -42,6 +42,50 @@
 			],
 			"group": "build",
 			"detail": "compiler: /usr/bin/cpp"
+		},
+		{
+			
+			"type": "cppbuild",
+			"label": "C/C++: g++ build active file",
+			"command": "/usr/bin/g++",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"${file}",
+				"-o",
+				"${fileDirname}/${fileBasenameNoExtension}",
+				"`pkg-config --libs opencv4 --cflags`",
+				// "-g","${workspaceFolder}/${fileBasenameNoExtension}.cpp",
+				// "-o","${fileBasenameNoExtension}.out",
+				"-I","/usr/include",
+				"-I","/usr/include/opencv",
+				"-I","/usr/include/opencv4",
+				"-L","/usr/local/lib/*",
+
+				// "-L","/usr/local/lib/**",
+				// "-I","/usr/include/opencv4/opencv/**",
+				// "-I","/usr/include/opencv4/opencv2/**",
+				// "-L", "/usr/local/lib/",
+				// "-l", "opencv_core", "-lopencv_imgproc", 
+				// "-l", "opencv_highgui",
+				// "-l", "opencv_ml",
+				// "-l", "opencv_video",
+				// "-l", "opencv_features2d",
+				// "-l", "opencv_calib3d",
+				// "-l", "opencv_objdetect", 
+				// "-l", "opencv_contrib", 
+				// "-l", "opencv_legacy",
+				// "-l", "opencv_stitching"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: /usr/bin/cpp"
+			
 		}
 	]
 }
