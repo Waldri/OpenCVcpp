@@ -11,8 +11,8 @@ using namespace cv;
 
 int main(int, char**)
 {
-    VideoCapture video_capture(0); // open the default camera
-    //VideoCapture video_capture("http://172.19.80.1:8000/"); // app MJPEG streamer
+    //VideoCapture video_capture(0); // open the default camera
+    VideoCapture video_capture("http://172.19.80.1:8000/"); // app MJPEG streamer
 
     if(!video_capture.isOpened())  // check if we succeeded
         return -1;
