@@ -4,10 +4,10 @@
 		{
 			"type": "cppbuild",
 			"label": "C/C++: cpp build active file",
-			"command": "/usr/bin/cpp",
-			"args": [
-				"-fdiagnostics-color=always",
-				"-g",
+			"command": "/usr/bin/g++",
+			"args": [	
+				//"-fdiagnostics-color=always",
+				"-ggdb",
 				"${file}",
 				"-o",
 				"${fileDirname}/${fileBasenameNoExtension}",
